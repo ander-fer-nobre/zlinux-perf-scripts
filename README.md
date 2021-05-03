@@ -77,6 +77,9 @@ We use fio as I/O load tool to simulate I/O workload. For you install:
 # yum install -y fio
 ```
 
+## I/O workload simulation
+
+
 Here are some workload tests that we run for initial evaluation
 - Write sequential, 4kb, 16 threads, depth 256   
 ```
