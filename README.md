@@ -24,9 +24,9 @@ permission
 Add the following entries in root's crontab
 ```
 # zLinux perf scripts
-0,10,20,30,40,50 * * * * /usr/local/scripts/monitor_col_nmon.sh > /var/log/monitor_col_nmon.log 2>&1
-0,10,20,30,40,50 * * * * /usr/local/scripts/monitor_col_dasdstat.sh > /var/log/monitor_col_dasdstat.log 2>&1
-0,10,20,30,40,50 * * * * /usr/local/scripts/monitor_col_iostat.sh > /var/log/monitor_col_iostat.log 2>&1
+*/10 * * * * /usr/local/scripts/monitor_col_nmon.sh > /var/log/monitor_col_nmon.log 2>&1
+*/10 * * * * /usr/local/scripts/monitor_col_dasdstat.sh > /var/log/monitor_col_dasdstat.log 2>&1
+*/10 * * * * /usr/local/scripts/monitor_col_iostat.sh > /var/log/monitor_col_iostat.log 2>&1
 ```
 
 Every 10 minutes the monitoring scripts are executed from crontab, they check
